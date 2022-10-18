@@ -1,24 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KMG-RL-xfK">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Teal Color-->
+        <scene sceneID="ccc-ah-1YC">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="NormalTealVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dKw-QZ-yCc" customClass="NormalTealVC" customModule="NavTabBar_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GJs-NG-4GU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aF-0Y-HNO">
+                                <rect key="frame" x="126" y="404.66666666666669" width="138" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to light Teal"/>
+                                <connections>
+                                    <segue destination="N98-Gh-fxo" kind="show" id="72X-Ey-P6n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yeP-Cs-y9u"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="6aF-0Y-HNO" firstAttribute="centerY" secondItem="GJs-NG-4GU" secondAttribute="centerY" id="fGg-89-emV"/>
+                            <constraint firstItem="6aF-0Y-HNO" firstAttribute="centerX" secondItem="GJs-NG-4GU" secondAttribute="centerX" id="u0G-6N-yZO"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Teal Color" image="square.and.pencil.circle.fill" catalog="system" id="w1p-mm-6Cd"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GX5-ID-a49" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ZD7-nZ-QbY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
+            <point key="canvasLocation" x="2777" y="49"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0no-Om-ShZ">
+            <objects>
+                <navigationController id="KMG-RL-xfK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LJa-GH-McY">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WAK-ui-sgx" kind="relationship" relationship="rootViewController" id="N27-Wa-yYn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dlz-Of-Noq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="-339"/>
+        </scene>
+        <!--Purple Color-->
+        <scene sceneID="xki-Lb-NbE">
+            <objects>
+                <viewController storyboardIdentifier="NormalPurpleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QCE-H9-KtP" customClass="NormalPurpleVC" customModule="NavTabBar_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ql-xZ-DhA">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jv2-R0-dOQ">
+                                <rect key="frame" x="108.66666666666669" y="404.66666666666669" width="173" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to darker Purple"/>
+                                <connections>
+                                    <segue destination="PFV-6F-Gii" kind="show" identifier="gotodarker" id="VQ7-Jr-geV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vAG-2R-uLB"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="jv2-R0-dOQ" firstAttribute="centerY" secondItem="5ql-xZ-DhA" secondAttribute="centerY" id="HtE-7b-E31"/>
+                            <constraint firstItem="jv2-R0-dOQ" firstAttribute="centerX" secondItem="5ql-xZ-DhA" secondAttribute="centerX" id="VDZ-hk-asH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Purple Color" image="pencil.circle.fill" catalog="system" id="rno-4O-qdk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMK-PN-3Fq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Bay-fI-tVS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2778" y="-623"/>
+        </scene>
+        <!--Dark PurpleVC-->
+        <scene sceneID="zzT-Ah-Osg">
+            <objects>
+                <viewController storyboardIdentifier="DarkPurpleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PFV-6F-Gii" customClass="DarkPurpleVC" customModule="NavTabBar_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XOb-MR-TFq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUy-dl-pP8">
+                                <rect key="frame" x="87" y="404.66666666666669" width="216" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to more darker Purple"/>
+                                <connections>
+                                    <segue destination="94u-hi-QY9" kind="show" id="huv-MM-Z2o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pw-Bs-7nF">
+                                <rect key="frame" x="99" y="469.66666666666669" width="192" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back to normal Purple"/>
+                                <connections>
+                                    <action selector="onBackToNormalPurpleTapped:" destination="PFV-6F-Gii" eventType="touchUpInside" id="als-v4-0gY"/>
+                                    <segue destination="Bay-fI-tVS" kind="unwind" identifier="gotonormal" unwindAction="unwindToNormalPuprle:" id="2hb-vl-3dS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZS5-N8-boI"/>
+                        <color key="backgroundColor" red="0.46347571427498091" green="0.24472283044421719" blue="0.61322548594137638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2pw-Bs-7nF" firstAttribute="top" secondItem="zUy-dl-pP8" secondAttribute="bottom" constant="30" id="7O0-nD-B8h"/>
+                            <constraint firstItem="zUy-dl-pP8" firstAttribute="centerX" secondItem="XOb-MR-TFq" secondAttribute="centerX" id="O2S-LQ-EVB"/>
+                            <constraint firstItem="2pw-Bs-7nF" firstAttribute="centerX" secondItem="XOb-MR-TFq" secondAttribute="centerX" id="Wk7-Fc-GfG"/>
+                            <constraint firstItem="zUy-dl-pP8" firstAttribute="centerY" secondItem="XOb-MR-TFq" secondAttribute="centerY" id="e7v-ha-jcW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZRD-eZ-Oba"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Njd-SA-nfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3725" y="-623"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sXL-Xe-gSK">
+            <objects>
+                <tabBarController id="WAK-ui-sgx" customClass="ViewController" customModule="NavTabBar_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Fq0-qn-yCH"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rd4-wh-Q7P">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QCE-H9-KtP" kind="relationship" relationship="viewControllers" id="zvv-En-ZcS"/>
+                        <segue destination="dKw-QZ-yCc" kind="relationship" relationship="viewControllers" id="KfN-Or-hYl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVa-Gg-gcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="-339"/>
+        </scene>
+        <!--More Dark PurpleVC-->
+        <scene sceneID="HtQ-jU-RYd">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="94u-hi-QY9" customClass="MoreDarkPurpleVC" customModule="NavTabBar_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wft-VK-jCS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oo-Wt-B2T">
+                                <rect key="frame" x="92.666666666666686" y="404.66666666666669" width="205" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Return to normal Purple"/>
+                                <connections>
+                                    <action selector="onReturnToNormalPurpleTapped:" destination="94u-hi-QY9" eventType="touchUpInside" id="EKo-L8-vG7"/>
+                                    <segue destination="Bay-fI-tVS" kind="unwind" identifier="backtonormal" unwindAction="unwindToNormalPuprle:" id="0P3-9O-Mkj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gy3-ha-W1L"/>
+                        <color key="backgroundColor" red="0.30431758374850965" green="0.16068470937119084" blue="0.40264309957774003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8oo-Wt-B2T" firstAttribute="centerX" secondItem="Wft-VK-jCS" secondAttribute="centerX" id="AJi-k4-Bal"/>
+                            <constraint firstItem="8oo-Wt-B2T" firstAttribute="centerY" secondItem="Wft-VK-jCS" secondAttribute="centerY" id="BUg-uK-Mqm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hbn-IV-JpF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SbU-Ry-KHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4611" y="-623"/>
+        </scene>
+        <!--Light TealVC-->
+        <scene sceneID="nak-Se-A3B">
+            <objects>
+                <viewController storyboardIdentifier="LightTealVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N98-Gh-fxo" customClass="LightTealVC" customModule="NavTabBar_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i5H-BU-1j2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAY-gJ-4Ii">
+                                <rect key="frame" x="118" y="404.66666666666669" width="154" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to lighter Teal"/>
+                                <connections>
+                                    <segue destination="S3N-sg-l83" kind="show" id="img-KD-D4k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tp-nC-Fjw">
+                                <rect key="frame" x="108" y="469.66666666666669" width="174" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back to normal Teal"/>
+                                <connections>
+                                    <action selector="onBackToNormalTealPressed:" destination="N98-Gh-fxo" eventType="touchUpInside" id="7PX-BI-sk6"/>
+                                    <segue destination="ZD7-nZ-QbY" kind="unwind" identifier="backtonormalteal" unwindAction="unwindToNormalTeal:" id="cK9-Ao-owt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eOm-j9-Mj4"/>
+                        <color key="backgroundColor" red="0.42752418223890437" green="0.8233477995453482" blue="0.93865847166138461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="ZAY-gJ-4Ii" firstAttribute="centerX" secondItem="i5H-BU-1j2" secondAttribute="centerX" id="5HZ-xE-FqF"/>
+                            <constraint firstItem="4Tp-nC-Fjw" firstAttribute="top" secondItem="ZAY-gJ-4Ii" secondAttribute="bottom" constant="30" id="A8j-6M-Ucx"/>
+                            <constraint firstItem="4Tp-nC-Fjw" firstAttribute="centerX" secondItem="i5H-BU-1j2" secondAttribute="centerX" id="Y0S-iE-uJ5"/>
+                            <constraint firstItem="ZAY-gJ-4Ii" firstAttribute="centerY" secondItem="i5H-BU-1j2" secondAttribute="centerY" id="aj6-ne-2gr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F14-W7-U2N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXa-2d-Jyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3725" y="48"/>
+        </scene>
+        <!--More Light TealVC-->
+        <scene sceneID="TW4-oG-lWu">
+            <objects>
+                <viewController storyboardIdentifier="MoreLightTealVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S3N-sg-l83" customClass="MoreLightTealVC" customModule="NavTabBar_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ubz-zL-WTo">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHU-Yk-03A">
+                                <rect key="frame" x="101.66666666666669" y="404.66666666666669" width="187" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Return to normal Teal"/>
+                                <connections>
+                                    <action selector="onReturnToNormalTealPressed:" destination="S3N-sg-l83" eventType="touchUpInside" id="eaR-j3-JAY"/>
+                                    <segue destination="ZD7-nZ-QbY" kind="unwind" identifier="returntonormalteal" unwindAction="unwindToNormalTeal:" id="jua-bB-vZL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vb4-5K-7in"/>
+                        <color key="backgroundColor" red="0.47394042185135121" green="0.94426193078795873" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cHU-Yk-03A" firstAttribute="centerY" secondItem="ubz-zL-WTo" secondAttribute="centerY" id="PJ9-Wa-yFH"/>
+                            <constraint firstItem="cHU-Yk-03A" firstAttribute="centerX" secondItem="ubz-zL-WTo" secondAttribute="centerX" id="wb0-kQ-hJ2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eFC-w7-46Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FnH-gy-4e6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4611" y="48"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="square.and.pencil.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
