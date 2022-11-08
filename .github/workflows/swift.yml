@@ -16,5 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Force Xcode 11
+      run: sudo xcode-select -switch /Applications/Xcode_11.3.app
     - name: Build
       run: xcodebuild clean test -project "NavTabBar-HW.xcodeproj" -scheme "NavTabBar-HW" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
